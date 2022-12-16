@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This Terraform code will allow you deploy Argo CD to an existing OKE cluster or new OKE cluster.
+This Terraform code will allow you deploy a WordPress and MySQL Database in an OCI Container Instance
 
 ## Terraform Provider for Oracle Cloud Infrastructure
 The OCI Terraform Provider is now available for automatic download through the Terraform Provider Registry. 
@@ -27,8 +27,8 @@ and [setup guide](https://www.terraform.io/docs/providers/oci/guides/version-3-u
 
 Now, you'll want a local copy of this repo. You can make that with the commands:
 
-    git clone https://github.com/chiphwang1/oci_terraform_helm_wrapper.git
-    cd oci_terraform_helm_wrapper
+    git clone https://github.com/chiphwang1/OCI-Container-Instances.git
+    cd OCI-Container-Instances
     ls
 
 ### Prerequisites
@@ -49,8 +49,6 @@ region = "<oci_region>"
 # Compartment
 compartment_ocid = "<compartment_ocid>"
 
-# oke-variables
-existent_oke_cluster_id = "ocid_of_Oke_cluster_to_deploy_helm "
 
 ````
 
